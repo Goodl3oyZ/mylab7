@@ -34,8 +34,21 @@ string func3(string x){
 }
 
 int main(){
-    cout >> "Input text: "
-    cout >> "Reversed text: "
-    cout >> "Palindrome: "
+	string text, b4text, aftext, reversetext;
+    cout << "Input text: ";
+	cin>>text;
+    cout << "Reversed text: ";
+	    reversetext=func1(text); //ยังไม่ได้เปลี่ยตัวเล็กใหญ่
+	    cout<<reversetext;
+    b4text=func2(text);
+    aftext=func2(reversetext); //เปลี่ยนเป็นตัวเล็กทั้งหมด
+    cout <<"\n" <<"Palindrome: ";
+		
+		if(b4text==aftext){
+			cout<<"Yes";
+		}
+		if(b4text!=aftext){
+			cout<<"No";
+		}
     return 0;
 }
